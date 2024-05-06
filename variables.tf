@@ -14,9 +14,9 @@ variable "file_names" {
 }
 
 variable "target_path" {
-  type        = string
+  type        = list(string)
   description = "(String): (Required) Path to where the file will be copied."
-  default     = ""
+  default     = []
 }
 
 variable "content_file" {
